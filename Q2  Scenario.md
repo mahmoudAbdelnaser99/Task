@@ -2,18 +2,17 @@
 ```
 cat /etc/resolv.conf
 ```
-![[Pasted image 20250428101050.png]]
+![Pasted image 20250428101050](https://github.com/user-attachments/assets/2d1d9a3f-bb47-4f11-b4c2-0066ffd447be)
 
 ```
 nslookup internal.example.com
 ```
 
-![[Pasted image 20250428181023.png]]
+![Pasted image 20250428181023](https://github.com/user-attachments/assets/d7d29159-20f3-4d8c-9bc7-80369500f522)
 ```
 nslookup internal.example.com 8.8.8.8
 ```
-
-![[Pasted image 20250428181129.png]]
+![Pasted image 20250428181129](https://github.com/user-attachments/assets/bbec9fa6-5a10-453c-a6c0-a087044d193e)
 
 #### 2- Diagnose Service Reachability
 
@@ -59,7 +58,7 @@ vim /etc/hosts
 # add line
 10.10.10.10 internal.example.com
 ```
-![[Pasted image 20250428195507.png]]
+![Pasted image 20250428195507](https://github.com/user-attachments/assets/0b0b33a8-4dfa-4f5a-961f-799b33ca9598)
 ```
 nmcli connection modify "ens33" ipv4.dns "8.8.8.8"
 nmcli connection up ens33
